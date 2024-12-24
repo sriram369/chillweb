@@ -33,8 +33,12 @@
             font-weight: bold;
         }
 
-        .hero {
+        section {
+            padding: 60px 20px;
             text-align: center;
+        }
+
+        .hero {
             padding: 100px 20px;
         }
 
@@ -63,12 +67,32 @@
             background-color: #0072ff;
         }
 
+        .services, .portfolio, .contact {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            margin: 20px 0;
+        }
+
+        .services h2, .portfolio h2, .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .services ul, .portfolio ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li, .portfolio li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background: rgba(0, 0, 0, 0.8);
-            position: absolute;
-            bottom: 0;
+            position: relative;
             width: 100%;
         }
 
@@ -92,6 +116,34 @@
         <h2>Stay Chill, We’ll Build</h2>
         <p>Your one-stop solution for stunning websites and reliable hosting.</p>
         <button onclick="scrollToSection('contact')">Get Started</button>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Custom Website Design</li>
+            <li>Responsive Web Development</li>
+            <li>Reliable Hosting Solutions</li>
+            <li>SEO Optimization</li>
+            <li>Website Maintenance</li>
+        </ul>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Our Portfolio</h2>
+        <ul>
+            <li>Project 1: E-commerce Website</li>
+            <li>Project 2: Personal Portfolio</li>
+            <li>Project 3: Business Landing Page</li>
+            <li>Project 4: Blog Platform</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Reach out to us for your website needs.</p>
+        <p>Email: contact@chillweb.com</p>
+        <p>Phone: +123-456-7890</p>
     </section>
 
     <footer>
